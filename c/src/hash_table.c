@@ -4,8 +4,8 @@
 
 #include "./hash_table.h"
 
-#define HT_PRIME_1 151;
-#define HTP_PRIME_2 191;
+#define HT_PRIME_1 151
+#define HT_PRIME_2 191
 
 static ht_item HT_DELETED_ITEM = {NULL, NULL};
 
@@ -78,6 +78,7 @@ void ht_insert(ht_hash_table* ht, const char* key, const char* value) {
     ht->items[index] = item;
     ht->count++;
   }
+}
 
 
 char* ht_search(ht_hash_table* ht, const char* key) {

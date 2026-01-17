@@ -5,6 +5,5 @@
 
 int main() {
   ht_hash_table* ht = ht_new();
-  printf("%d\n", ht->size);
   ht_del_hash_table(ht);
 }
