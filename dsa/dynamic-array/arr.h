@@ -14,6 +14,8 @@ int *grow_array(dy_arr* pointer, int oldSize);
 void initArr(dy_arr *arr);
 void arr_add(dy_arr *arr, size_t ele);
 void arr_pop(dy_arr *arr);
+void arr_get(dy_arr *arr, int index);
+void arr_set(dy_arr *arr, int index, size_t ele);
 
 
 #endif

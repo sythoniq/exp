@@ -31,3 +31,11 @@ void arr_pop(dy_arr *arr) {
 
   arr->count--;
 }
+
+void arr_get(dy_arr *arr, int index) {
+  return arr->elements[index];
+}
+
+void arr_set(dy_arr *arr, int index, size_t ele) {
+  arr->elements[index] = ele;
+}
