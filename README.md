@@ -1,10 +1,19 @@
-# Programming Languages
+# Fixing Me
 
-> This repo will be a record of me vaguely familiarizing myself with different
-  programming languages.
+- This repo will hold the progress that I will be undertaking to fix all the
+issues and gaps in my knowledge of CS, you could even say I am learning CS over
+again and patching up the mistakes and ignorances.
 
-> This will be achieved by implementing different data structures in said
-  languages from scratch, to get a feel for each language
+> Motivation for this is due to how much knowledge about CS I have come to
+  realize that I am severly lacking at this moment
 
->> The languages wont be picked in any form of order, just randomly selected out
-   to just do the task.
+
+## Starting Point:
+
+> Implement a dynamic array using C.
+
+> DSA:
+    
+   - I will be implementing many of the data structures and algorithms mostly
+    in C, purely for better understanding and to also learn C itself.
+
