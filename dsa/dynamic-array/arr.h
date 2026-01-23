@@ -9,7 +9,7 @@ typedef struct {
   size_t *elements;
 } dy_arr;
 
-int *grow_array(dy_arr* pointer, int oldSize);
+int *grow_array(dy_arr* arr, int oldSize);
 
 void initArr(dy_arr *arr);
 void arr_add(dy_arr *arr, size_t ele);
