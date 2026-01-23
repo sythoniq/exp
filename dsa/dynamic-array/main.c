@@ -13,4 +13,6 @@ void main() {
   arr_set(&arr, 1, 100);
 
   printf("Curr arr element at 1: %d\n", arr_get(&arr, 1));
+
+  free_arr(&arr);
 }

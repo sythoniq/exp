@@ -39,3 +39,7 @@ size_t arr_get(dy_arr *arr, int index) {
 void arr_set(dy_arr *arr, int index, size_t ele) {
   arr->elements[index] = ele;
 }
+
+void free_arr(dy_arr *arr) {
+  free(arr->elements);
+}
