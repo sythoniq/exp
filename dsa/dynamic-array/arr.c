@@ -32,7 +32,7 @@ void arr_pop(dy_arr *arr) {
   arr->count--;
 }
 
-void arr_get(dy_arr *arr, int index) {
+size_t arr_get(dy_arr *arr, int index) {
   return arr->elements[index];
 }
 
