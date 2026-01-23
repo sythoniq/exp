@@ -28,10 +28,12 @@ void arr_pop(dy_arr *arr) {
 }
 
 size_t arr_get(dy_arr *arr, int index) {
+  if (index > arr->count) return 0;
   return arr->elements[index];
 }
 
 void arr_set(dy_arr *arr, int index, size_t ele) {
+  if (index > arr->count) return;
   arr->elements[index] = ele;
 }
 
