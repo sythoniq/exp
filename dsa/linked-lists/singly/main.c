@@ -2,19 +2,16 @@
 #include <stdio.h>
 
 #include "node.h"
+#include "list.h"
 
 void main() {
-  ll_node root;
-  ll_node node;
-  ll_node node1;
+  LinkedList list;
+  listInit(&list);
 
-  initList(&root);
-   
-  addNode(&node, &root);
-  addNode(&node1, &root);
+  addToList(&list, 10);
+  addToList(&list, 20);
+  addToList(&list, 30);
+  addToList(&list, 40);
+  removeFromList(&list, 10);  
 
-  printf("%p\n%p\n", node.tail, &node1);
-
-  deleteNode(&node1, &root);
-  printf("%p\n", node.tail);
 }
