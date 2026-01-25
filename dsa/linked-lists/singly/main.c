@@ -9,9 +9,6 @@ void main() {
   listInit(&list);
 
   addToList(&list, 10);
-  addToList(&list, 20);
-  addToList(&list, 30);
-  addToList(&list, 40);
-  removeFromList(&list, 10);  
 
+  listPop(&list);
 }

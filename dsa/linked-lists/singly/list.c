@@ -26,27 +26,20 @@ void addToList(LinkedList *list, size_t value) {
   }
 }
 
-// Edge case whereby if root delete attempted seg faults and fails.
-// As such am just returning from the thing to avoid it.
-void removeFromList(LinkedList *list, size_t value) {
-  if (list->root == NULL) return;
-
-  if (list->root->data == value) return;
+void listPop(LinkedList *list) {
+  if (list->root->next == NULL) {
+    printf("I suck at C bruh, this segfaults if i try and free/make the root \
+null");
+  }
 
   node *curr = list->root;
   node *prev;
-  while(curr->data != value) {
+  while (curr->next != NULL) {
     prev = curr;
     curr = curr->next;
   }
-
-  if (curr->next == NULL) {
-    prev->next = NULL;
-    free(curr);
-  } else {
-    prev->next = curr->next;
-    free(curr);
-  }
+  prev->next = NULL;
+  free(curr);
 }
 
 void deleteList(LinkedList *list) {

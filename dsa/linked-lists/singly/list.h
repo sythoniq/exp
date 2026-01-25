@@ -9,7 +9,7 @@ typedef struct {
 
 void listInit(LinkedList *list);
 void addToList(LinkedList *list, size_t value);
-void removeFromList(LinkedList *list, size_t value);
+void listPop(LinkedList *list);
 void deleteList(LinkedList *list);
 
 #endif
